@@ -1,3 +1,10 @@
+/*
+ * @Author: gyg nicheface@outlook.com
+ * @Date: 2023-09-15 14:29:41
+ * @LastEditors: gyg nicheface@outlook.com
+ * @LastEditTime: 2023-09-15 22:52:26
+ * @FilePath: \\variable-print\\src\\extension.ts
+ */
 import * as vscode from 'vscode';
 
 function getCustomPrintStatement(languageId: string): string {
