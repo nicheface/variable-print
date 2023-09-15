@@ -1,3 +1,10 @@
+<!--
+ * @Author: gyg nicheface@outlook.com
+ * @Date: 2023-09-15 14:29:41
+ * @LastEditors: gyg nicheface@outlook.com
+ * @LastEditTime: 2023-09-15 23:14:05
+ * @FilePath: \\variable-print\\README.md
+-->
 # variable-print README 中文
 
 变量打印，自定义任意语言的变量打印，可以在扩展设置里面自定义修改
