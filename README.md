@@ -2,7 +2,7 @@
  * @Author: gyg nicheface@outlook.com
  * @Date: 2023-09-15 14:29:41
  * @LastEditors: gyg nicheface@outlook.com
- * @LastEditTime: 2023-09-15 23:14:05
+ * @LastEditTime: 2023-09-15 23:27:17
  * @FilePath: \\variable-print\\README.md
 -->
 # variable-print README 中文
@@ -26,8 +26,10 @@ win,mac 快捷键 `ctrl+alt+p`
 
 打印语句支持修改
 
+`$v`代表当前变量(多个变量自动拆分)，`$row`代表当前行，`$col`代表当前列,支持多个后缀使用同种配置 `h|c|cpp`
+
 ```json
-//$v代表当前变量(多个变量自动拆分)，$row代表当前行，$col代表当前列,支持多个后缀使用同种配置 h|c|cpp
+
     "default": {
         "rust": "println!(\"row: $row - col: $col $v -> {}\", &$v);",
         "go": "fmt.Println(\"row: $row - col: $col $v -> {}\", $v);",
