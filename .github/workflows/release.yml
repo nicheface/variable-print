@@ -23,14 +23,14 @@ jobs:
 
       - name: Package Release
         run: npx vsce package
-      - name: Extract Version
-        id: extract-version
-        run: echo "::set-env name=PACKAGE_VERSION::$(node -p "require('../../package.json').version")"
+      - name: Set Environment Variables
+        run: |
+          echo "PACKAGE_VERSION=$(cat .env)" >> $GITHUB_ENV
       
       - name: Upload Release Artifact
         uses: actions/upload-artifact@v2
         with:
-          name: vsix-package-${{env.PACKAGE_VERSION}}.vsix
+          name: vsix-package-$GITHUB_ENV.vsix
           path: ./*.vsix
       - name: Upload to Release
         id: upload-release
@@ -39,6 +39,6 @@ jobs:
         with:
           upload_url: $
           asset_path: ./*.vsix
-          asset_name: vsix-package-${{env.PACKAGE_VERSION}}.vsix
+          asset_name: vsix-package-$GITHUB_ENV.vsix
           token: id_ed25529
           asset_content_type: application/zip
