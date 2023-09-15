@@ -1,8 +1,8 @@
 <!--
  * @Author: gyg nicheface@outlook.com
  * @Date: 2023-09-15 14:29:41
- * @LastEditors: gyg nicheface@outlook.com
- * @LastEditTime: 2023-09-15 23:27:17
+ * @LastEditors: nicheface nicheface@outlook.com
+ * @LastEditTime: 2023-09-16 01:01:02
  * @FilePath: \\variable-print\\README.md
 -->
 # variable-print README 中文
@@ -39,9 +39,9 @@ win,mac 快捷键 `ctrl+alt+p`
 
 ## 更新日志
 
+* 2023-09-15 1.0.2 加了logo和github action
 * 2023-09-15 1.0.1 改进了readme
-* 2023-09-15 1.0.0 初始版本
-可以自定义打印格式，在扩展设置里修改，支持 c|cpp|h 多个后缀名使用同种打印配置
+* 2023-09-15 1.0.0 初始版本 可以自定义打印格式，在扩展设置里修改，支持 c|cpp|h 多个后缀名使用同种打印配置
 
 ## github
 

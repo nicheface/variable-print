@@ -3,9 +3,10 @@
   "name": "variable-print",
   "displayName": "variable-print",
   "description": "variable-print-rust and so on",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "repository": "https://github.com/nicheface/variable-print.git",
   "license": "GPL",
+  "icon": "./imags/logo.png",
   "engines": {
     "vscode": "^1.82.0"
   },
