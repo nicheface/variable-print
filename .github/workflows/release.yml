@@ -32,8 +32,10 @@ jobs:
       - name: Upload to Release
         id: upload-release
         uses: actions/upload-release-asset@v1
+        
         with:
           upload_url: $
           asset_path: ./*.vsix
           asset_name: vsix-package-${version}.vsix
           token: id_ed25529
+          asset_content_type: application/zip
