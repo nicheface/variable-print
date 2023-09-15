@@ -3,7 +3,7 @@
   "name": "variable-print",
   "displayName": "variable-print",
   "description": "variable-print-rust and so on",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "repository": "https://github.com/nicheface/variable-print.git",
   "license": "GPL",
   "engines": {
