@@ -20,7 +20,7 @@ jobs:
 
     - name: Install dependencies
       run: npm install
-      
+
     - name: Install vsce
       run: npm install -g vsce
 
@@ -33,7 +33,7 @@ jobs:
     - name: Upload release artifact
       uses: actions/upload-artifact@v2
       with:
-        name: your-extension-name-${{ github.ref_name }}  # 使用标签名称作为版本号
+        name: variable-print-${{ github.ref_name }}  # 使用标签名称作为版本号
         path: dist
 
   release:
@@ -46,7 +46,7 @@ jobs:
     - name: Download release artifact
       uses: actions/download-artifact@v2
       with:
-        name: your-extension-name-${{ github.ref_name }}
+        name: variable-print-${{ github.ref_name }}
         path: dist
 
     - name: Create GitHub Release
