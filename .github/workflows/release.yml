@@ -1,41 +1,58 @@
-name: Package Release
+name: Release Extension
 
 on:
   push:
-    branches:
-      - main
+    tags:
+      - '*'
 
 jobs:
-  package_release:
+  build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
+    - name: Checkout code
+      uses: actions/checkout@v2
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: 18
+    - name: Setup Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: 18
 
-      - name: Install dependencies
-        run: npm ci
+    - name: Install dependencies
+      run: npm install
 
-      - name: Package Release
-        run: npx vsce package
-      
-      - name: Upload Release Artifact
-        uses: actions/upload-artifact@v2
-        with:
-          name: vsix-package-1.0.2.vsix
-          path: ./*.vsix
-      - name: Upload to Release
-        id: upload-release
-        uses: actions/upload-release-asset@v1
-        
-        with:
-          upload_url: $
-          asset_path: ./*.vsix
-          asset_name: vsix-package-1.0.2.vsix
-          token: id_ed25529
-          asset_content_type: application/zip
+    - name: Build extension
+      run: vsce package  # 使用 vsce 命令打包扩展
+
+    - name: Archive extension
+      run: mv *.vsix dist/  # 将生成的 .vsix 文件移动到 dist 目录下
+
+    - name: Upload release artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: your-extension-name-${{ github.ref_name }}  # 使用标签名称作为版本号
+        path: dist
+
+  release:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Download release artifact
+      uses: actions/download-artifact@v2
+      with:
+        name: your-extension-name-${{ github.ref_name }}
+        path: dist
+
+    - name: Create GitHub Release
+      id: create_release
+      uses: softprops/action-gh-release@v1
+      with:
+        files: dist/*
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Publish Release
+      run: echo "Release published at ${{ steps.create_release.outputs.url }}"
