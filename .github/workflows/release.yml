@@ -55,9 +55,9 @@ jobs:
       with:
         files: dist/*
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.TEST }}
 
 
-        
+
     - name: Publish Release
       run: echo "Release published at ${{ steps.create_release.outputs.url }}"
