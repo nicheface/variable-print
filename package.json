@@ -2,11 +2,11 @@
   "publisher": "nicheface",
   "name": "variable-print",
   "displayName": "variable-print",
-  "description": "variable-print-rust and so on",
+  "description": "print selected variable js,rust,py,java and so on",
   "version": "1.0.2",
   "repository": "https://github.com/nicheface/variable-print.git",
   "license": "GPL",
-  "icon": "./imags/logo.png",
+  "icon": "imags/logo.png",
   "engines": {
     "vscode": "^1.82.0"
   },
@@ -37,9 +37,27 @@
           "variable-print.customPrintStatements": {
               "type": "object",
               "default": {
-                  "rust": "println!(\"row: $row - col: $col $v -> {}\", &$v);",
-                  "go": "fmt.Println(\"row: $row - col: $col $v -> {}\", $v);",
-                  "h|c|cpp":"printf(\"row: $row - col: $col $v -> %s\", $v)"
+                  "rust": "println!(\"row: $row - col: $col $v -> {:?}\", &$v);",
+                  "go": "fmt.Printf(\"row: $row - col: $col $v -> %#v\n\",$v)",
+                  "h|c|cpp":"printf(\"row: $row - col: $col $v -> %s\n\", $v);",
+                  "js":"console.log($v);",
+                  "py":"print(f\"row: $row - col: $col $v -> {$v}\")",
+                  "java":"System.out.println($v);",
+                  "rb":"puts \"row: $row - col: $col $v -> #{$v}\"",
+                  "php":"var_dump($v);",
+                  "lua":"print(\"row: $row - col: $col $v ->(\",type($v),\")\",$v)",
+                  "kt":"println(\"row: $row - col: $col $v -> \"+$v)",
+                  "cs":"Console.WriteLine(\"row: $row - col: $col $v -> {0}\", $v);",
+                  "swift":"print(\"row: $row - col: $col $v -> \\($v)\")",
+                  "dart":"print(\"row: $row - col: $col $$v -> $v ${$$v.runtimeType}\");",
+                  "pl":"say \"row: $row - col: $col $v -> $$v\";",
+                  "scala":"println(s\"row: $row - col: $col $v -> ${$v}\")",
+                  "hrl|erl":"io:format(\"~w\", [$v]),",
+                  "jl":"println(\"row: $row - col: $col $v ->\", $v)",
+                  "hs":"putStrLn(\"row: $row - col: $col $v ->\" ++ $v)",
+                  "zig":"std.debug.print(\"row: $row - col: $col $v -> {}\n\", .{$v});",
+                  "v":"print($v)"
+                
               }
           }
       }

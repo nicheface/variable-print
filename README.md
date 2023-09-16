@@ -2,7 +2,7 @@
  * @Author: gyg nicheface@outlook.com
  * @Date: 2023-09-15 14:29:41
  * @LastEditors: nicheface nicheface@outlook.com
- * @LastEditTime: 2023-09-16 01:01:02
+ * @LastEditTime: 2023-09-16 21:07:18
  * @FilePath: \\variable-print\\README.md
 -->
 # variable-print README 中文
@@ -13,8 +13,8 @@
 
 选中要打印的变量，按快捷键或者输入命令
 
-win,mac 快捷键 `ctrl+alt+p`
-`ctrl+shift+p`的命令是`Print Selected Variable`
+- win,mac 快捷键 `ctrl+alt+p`
+- `ctrl+shift+p`的命令是`Print Selected Variable`
 
 支持一行内多变量(逗号或者空格隔开)打印，支持多行多变量打印，不支持ctrl多选
 
