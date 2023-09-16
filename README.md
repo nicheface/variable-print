@@ -7,7 +7,7 @@
 -->
 # variable-print README 中文
 
-变量打印，自定义任意语言的变量打印，可以在扩展设置里面自定义修改
+>变量打印，自定义任意语言的变量打印，可以在扩展设置里面自定义修改
 
 ## 使用说明
 
@@ -39,9 +39,10 @@
 
 ## 更新日志
 
-* 2023-09-15 1.0.2 加了logo和github action
-* 2023-09-15 1.0.1 改进了readme
-* 2023-09-15 1.0.0 初始版本 可以自定义打印格式，在扩展设置里修改，支持 c|cpp|h 多个后缀名使用同种打印配置
+- 2023-09-16 1.0.3 增加了更多语言的默认配置并且终于完成了github actions的release.yml编写
+- 2023-09-15 1.0.2 加了logo和github action
+- 2023-09-15 1.0.1 改进了readme
+- 2023-09-15 1.0.0 初始版本 可以自定义打印格式，在扩展设置里修改，支持 c|cpp|h 多个后缀名使用同种打印配置
 
 ## github
 
@@ -51,14 +52,12 @@
 
 Variable Print, customize variable printing for any programming language with the ability to modify settings in the extension.
 
-english
-
 ## Usage Instructions
 
 Select the variables you want to print and press the keyboard shortcut or enter the command:
 
-  - Keyboard Shortcut for Windows and macOS: `ctrl+alt+p`
-  - Command in the Command Palette: `Print Selected Variable`
+- Keyboard Shortcut for Windows and macOS: `ctrl+alt+p`
+- Command in the Command Palette: `Print Selected Variable`
 
 Supports printing multiple variables in a single line (separated by commas or spaces) and printing multiple variables across multiple lines. Note that multi-selection with Ctrl is not supported.
 
@@ -70,10 +69,10 @@ Generates printing statements based on the configured format below the selected 
 
 You can customize the printing statements in the extension settings. Use the following placeholders:
 
-  - `$v` represents the current variable (multiple variables are automatically split).
-  - `$row` represents the current line.
-  - `$col` represents the current column.
-  - Supports multiple file extensions using the same configuration (e.g., h|c|cpp).
+- `$v` represents the current variable (multiple variables are automatically split).
+- `$row` represents the current line.
+- `$col` represents the current column.
+- Supports multiple file extensions using the same configuration (e.g., h|c|cpp).
 
 Example configuration:
 
@@ -88,11 +87,11 @@ Example configuration:
 
 ## Changelog
 
-  - 2023-09-15 1.0.0 Initial release
-Customize printing formats in extension settings, supporting multiple file extensions such as c|cpp|h with the same printing configuration.
+- 2023-09-16 1.0.3: Added default configurations for more languages and finally completed the writing of the GitHub Actions release.yml.
+- 2023-09-15 1.0.2: Added a logo and GitHub action.
+- 2023-09-15 1.0.1: Improved the readme.
+- 2023-09-15 1.0.0: Initial version. Customizable printing format in extension settings, supports multiple file extensions (c|cpp|h) with the same printing configuration.
 
 ## GitHub
 
 <https://github.com/nicheface/variable-print.git>
-
-Enjoy!

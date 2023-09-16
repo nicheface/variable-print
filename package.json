@@ -3,7 +3,7 @@
   "name": "variable-print",
   "displayName": "variable-print",
   "description": "print selected variable js,rust,py,java and so on",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "repository": "https://github.com/nicheface/variable-print.git",
   "license": "GPL",
   "icon": "imags/logo.png",
