@@ -2,7 +2,7 @@
  * @Author: nicheface nicheface@outlook.com
  * @Date: 2023-09-15 14:29:41
  * @LastEditors: nicheface nicheface@outlook.com
- * @LastEditTime: 2023-09-21 03:40:40
+ * @LastEditTime: 2023-09-21 04:18:46
  * @FilePath: \\variable-print\\src\\extension.ts
  */
 

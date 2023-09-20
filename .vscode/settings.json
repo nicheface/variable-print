@@ -20,5 +20,32 @@
     "i18n-ally.localesPaths": [
         "locales"
     ],
-    "i18n-ally.keystyle": "nested"
+    "i18n-ally.keystyle": "nested",
+    "variable-print.userCustomPrintStatements": {
+
+        "rust": "println!(\"row: $row - col: $col $v -> {:?}\", &$v);",
+        "javascript|typescript": "console.log(\"row: $row - col: $col $v -> \"+ $v);",
+    },
+    "variable-print.customPrintStatements": {
+
+        "rust": "println!(\"row: $row - col: $col $v -> {}\", &$v);",
+        "go": "fmt.Printf(\"row: $row - col: $col $v -> %#v\",$v)",
+        "h|c|cpp": "printf(\"row: $row - col: $col $v -> %s\\n\", $v);",
+        "javascript|typescript": "console.log($v);",
+        "python": "print(f\"row: $row - col: $col $v -> {$v}\")",
+        "java": "System.out.println($v);",
+        "ruby": "puts \"row: $row - col: $col $v -> #{$v}\"",
+        "php": "var_dump($v);",
+        "lua": "print(\"row: $row - col: $col $v ->(\",type($v),\")\",$v)",
+        "kotlin": "println(\"row: $row - col: $col $v -> \"+$v)",
+        "csharp": "Console.WriteLine(\"row: $row - col: $col $v -> {0}\", $v);",
+        "swift": "print(\"row: $row - col: $col $v -> \\($v)\")",
+        "dart": "print(\"row: $row - col: $col $$v -> $v ${$$v.runtimeType}\");",
+        "perl": "say \"row: $row - col: $col $v -> $$v\";",
+        "julia": "println(\"row: $row - col: $col $v ->\", $v)",
+        "haskell": "putStrLn(\"row: $row - col: $col $v ->\" ++ $v)",
+        "zig": "std.debug.print(\"row: $row - col: $col $v -> {}\", .{$v});",
+        "v": "print($v)"
+    },
+    "files.autoSave": "onFocusChange"
 }
