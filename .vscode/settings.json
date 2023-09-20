@@ -13,5 +13,8 @@
     "workbench.colorCustomizations": {
         "editor.lineHighlightBackground": "#1073cf2d",
         "editor.lineHighlightBorder": "#9fced11f"
-    }
+    },
+    "github-actions.workflows.pinned.workflows": [
+        ".github/workflows/release.yml"
+    ]
 }
