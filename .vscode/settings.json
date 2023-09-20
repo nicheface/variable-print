@@ -16,5 +16,9 @@
     },
     "github-actions.workflows.pinned.workflows": [
         ".github/workflows/release.yml"
-    ]
+    ],
+    "i18n-ally.localesPaths": [
+        "locales"
+    ],
+    "i18n-ally.keystyle": "nested"
 }

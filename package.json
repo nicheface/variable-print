@@ -11,7 +11,15 @@
     "vscode": "^1.82.0"
   },
   "categories": [
+    "Formatters",
+    "Snippets",
     "Other"
+  ],
+  "keywords": [
+    "print",
+    "variable",
+    "console",
+    "selected"
   ],
   "activationEvents": [],
   "main": "./dist/extension.js",
@@ -19,11 +27,10 @@
     "commands": [
       {
         "command": "extension.printVariable",
-        "title": "variable-print:Print Selected Variable",
+        "title": "%extension.printVariable.title%",
         "icon": "imags/logo.png",
         "multiCursorModifier": true,
-        "shortTitle": "Print Selected Variable",
-        "category": "variable-print"
+        "category": "🎨variable-print: "
       }
     ],
     "keybindings": [
@@ -35,6 +42,16 @@
         "multiCursorModifier": true
       }
     ],
+    "menus": {
+      "editor/context": [
+        {
+          "command": "extension.printVariable",
+          "group": "navigation",
+          "alt": "print selected variable",
+          "when": "editorTextFocus"
+        }
+      ]
+    },
     "configuration": {
       "type": "object",
       "title": "variable-print",
@@ -83,18 +100,21 @@
     "test": "node ./out/test/runTest.js"
   },
   "devDependencies": {
-    "@types/vscode": "^1.82.0",
     "@types/mocha": "^10.0.1",
     "@types/node": "16.x",
+    "@types/vscode": "^1.82.0",
     "@typescript-eslint/eslint-plugin": "^6.4.1",
     "@typescript-eslint/parser": "^6.4.1",
+    "@vscode/test-electron": "^2.3.4",
     "eslint": "^8.47.0",
     "glob": "^10.3.3",
     "mocha": "^10.2.0",
-    "typescript": "^5.1.6",
     "ts-loader": "^9.4.4",
+    "typescript": "^5.1.6",
     "webpack": "^5.88.2",
-    "webpack-cli": "^5.1.4",
-    "@vscode/test-electron": "^2.3.4"
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "i18next": "^23.5.1"
   }
 }

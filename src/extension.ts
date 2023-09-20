@@ -2,12 +2,13 @@
  * @Author: nicheface nicheface@outlook.com
  * @Date: 2023-09-15 14:29:41
  * @LastEditors: nicheface nicheface@outlook.com
- * @LastEditTime: 2023-09-20 08:29:09
+ * @LastEditTime: 2023-09-21 03:40:40
  * @FilePath: \\variable-print\\src\\extension.ts
  */
 
 
 import * as vscode from 'vscode';
+
 // function resetDefaultConfiguration() {
 //     const defaultConfig = {
 //         "rust": "println!(\"row: $row - col: $col $v -> {}\", &$v);",
@@ -180,6 +181,7 @@ function insertCustomPrintStatement(editor: vscode.TextEditor) {
 }
 
 export function activate(context: vscode.ExtensionContext) {
+    
     // const extension = vscode.extensions.getExtension('variable-print');
     // const currentVersion = extension?.packageJSON.version;
     // const previousVersion = context.globalState.get('variable-print.extensionVersion');
@@ -192,6 +194,9 @@ export function activate(context: vscode.ExtensionContext) {
     // context.subscriptions.push(vscode.commands.registerCommand('resetDefaultConfig', () => {
     //     resetDefaultConfiguration();
     // }));
+    // const nls = require('vscode-nls');
+    // const localize = nls.loadMessageBundle();
+    // const printtitle=localize('print selected variable');
     // 获取用户配置
     const userConfig = vscode.workspace.getConfiguration('variable-print');
     let userCustomPrintStatements = userConfig.get('userCustomPrintStatements') || {};
@@ -201,6 +206,7 @@ export function activate(context: vscode.ExtensionContext) {
         vscode.window.showInformationMessage('user configuration has been reset.');
     }
     const disposable = vscode.commands.registerCommand('extension.printVariable', () => {
+        // vscode.window.showInformationMessage(printtitle);
         const editor = vscode.window.activeTextEditor;
         if (editor) {
             const selectedText = editor.document.getText(editor.selection);
