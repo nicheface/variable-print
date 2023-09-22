@@ -2,7 +2,7 @@
  * @Author: nicheface nicheface@outlook.com
  * @Date: 2023-09-15 14:29:41
  * @LastEditors: nicheface nicheface@outlook.com
- * @LastEditTime: 2023-09-22 10:50:08
+ * @LastEditTime: 2023-09-22 10:59:58
  * @FilePath: \\variable-print\\README.md
 -->
 <!--
@@ -24,7 +24,7 @@
 [![Visual Studio Marketplace Downloads](https://img.shields.io/visual-studio-marketplace/d/nicheface.variable-print?label=downloads)](https://marketplace.visualstudio.com/items?itemName=nicheface.variable-print)
 [![stars](https://img.shields.io/github/stars/nicheface/variable-print)](https://github.com/nicheface/variable-print.git)
 [![issues](https://img.shields.io/github/issues/nicheface/variable-print)](https://github.com/nicheface/variable-print.git)
-[![GitHub License](https://img.shields.io/github/license/nicheface/variable-print)](https://github.com/nicheface/variable-print.git)
+![GitHub](https://img.shields.io/github/license/nicheface/variable-print)
 
 📕 [GitHub仓库](https://github.com/nicheface/variable-print.git)
 📗 [VS Code插件市场](https://marketplace.visualstudio.com/items?itemName=nicheface.variable-print)
