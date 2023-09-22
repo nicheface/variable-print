@@ -2,7 +2,7 @@
  * @Author: nicheface nicheface@outlook.com
  * @Date: 2023-09-15 14:29:41
  * @LastEditors: nicheface nicheface@outlook.com
- * @LastEditTime: 2023-09-22 10:33:15
+ * @LastEditTime: 2023-09-22 10:50:08
  * @FilePath: \\variable-print\\README.md
 -->
 <!--
@@ -16,13 +16,15 @@
 
 简体中文|[english](./README%20EN.md)
 
-[![pPoVJBR.png](https://z1.ax1x.com/2023/09/22/pPoVJBR.png)](https://imgse.com/i/pPoVJBR)
+<div align=center>
+	<img src="https://z1.ax1x.com/2023/09/22/pPoVJBR.png"/>
+</div>
 
 [![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/nicheface.variable-print?label=version)](https://marketplace.visualstudio.com/items?itemName=nicheface.variable-print)
 [![Visual Studio Marketplace Downloads](https://img.shields.io/visual-studio-marketplace/d/nicheface.variable-print?label=downloads)](https://marketplace.visualstudio.com/items?itemName=nicheface.variable-print)
 [![stars](https://img.shields.io/github/stars/nicheface/variable-print)](https://github.com/nicheface/variable-print.git)
 [![issues](https://img.shields.io/github/issues/nicheface/variable-print)](https://github.com/nicheface/variable-print.git)
-<!-- [![GitHub License](https://img.shields.io/github/license/nicheface/variable-print)](https://github.com/nicheface/variable-print.git) -->
+[![GitHub License](https://img.shields.io/github/license/nicheface/variable-print)](https://github.com/nicheface/variable-print.git)
 
 📕 [GitHub仓库](https://github.com/nicheface/variable-print.git)
 📗 [VS Code插件市场](https://marketplace.visualstudio.com/items?itemName=nicheface.variable-print)
