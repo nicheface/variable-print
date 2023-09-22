@@ -1,0 +1,24 @@
+"filename", "language", "JavaScript", "JSON with Comments", "TypeScript", "Markdown", "JSON", "Ignore", "YAML", "comment", "blank", "total"
+"f:\learn_data\vscode\vscode_variable-print\variable-print\.eslintrc.json", "JSON with Comments", 0, 22, 0, 0, 0, 0, 0, 3, 0, 25
+"f:\learn_data\vscode\vscode_variable-print\variable-print\.github\workflows\release.yml", "YAML", 0, 0, 0, 0, 0, 0, 52, 0, 17, 69
+"f:\learn_data\vscode\vscode_variable-print\variable-print\.vscodeignore", "Ignore", 0, 0, 0, 0, 0, 13, 0, 0, 1, 14
+"f:\learn_data\vscode\vscode_variable-print\variable-print\@types\i18next.d.ts", "TypeScript", 0, 0, 0, 0, 0, 0, 0, 0, 1, 1
+"f:\learn_data\vscode\vscode_variable-print\variable-print\CHANGELOG.md", "Markdown", 0, 0, 0, 12, 0, 0, 0, 0, 12, 24
+"f:\learn_data\vscode\vscode_variable-print\variable-print\README.md", "Markdown", 0, 0, 0, 56, 0, 0, 0, 7, 35, 98
+"f:\learn_data\vscode\vscode_variable-print\variable-print\i18n_tools.config.js", "JavaScript", 10, 0, 0, 0, 0, 0, 0, 0, 0, 10
+"f:\learn_data\vscode\vscode_variable-print\variable-print\package-lock.json", "JSON", 0, 0, 0, 0, 3896, 0, 0, 0, 1, 3897
+"f:\learn_data\vscode\vscode_variable-print\variable-print\package.json", "JSON", 0, 0, 0, 0, 120, 0, 0, 0, 1, 121
+"f:\learn_data\vscode\vscode_variable-print\variable-print\package.nls.json", "JSON", 0, 0, 0, 0, 3, 0, 0, 0, 0, 3
+"f:\learn_data\vscode\vscode_variable-print\variable-print\package.nls.zh-cn.json", "JSON", 0, 0, 0, 0, 3, 0, 0, 0, 0, 3
+"f:\learn_data\vscode\vscode_variable-print\variable-print\project.inlang.json", "JSON", 0, 0, 0, 0, 17, 0, 0, 0, 1, 18
+"f:\learn_data\vscode\vscode_variable-print\variable-print\src\extension.ts", "TypeScript", 0, 0, 135, 0, 0, 0, 0, 22, 27, 184
+"f:\learn_data\vscode\vscode_variable-print\variable-print\src\locales\index.js", "JavaScript", 10, 0, 0, 0, 0, 0, 0, 0, 3, 13
+"f:\learn_data\vscode\vscode_variable-print\variable-print\src\locales\zh_cn.js", "JavaScript", 3, 0, 0, 0, 0, 0, 0, 0, 0, 3
+"f:\learn_data\vscode\vscode_variable-print\variable-print\src\test.ts", "TypeScript", 0, 0, 0, 0, 0, 0, 0, 0, 1, 1
+"f:\learn_data\vscode\vscode_variable-print\variable-print\src\test\runTest.ts", "TypeScript", 0, 0, 13, 0, 0, 0, 0, 5, 6, 24
+"f:\learn_data\vscode\vscode_variable-print\variable-print\src\test\suite\extension.test.ts", "TypeScript", 0, 0, 9, 0, 0, 0, 0, 3, 4, 16
+"f:\learn_data\vscode\vscode_variable-print\variable-print\src\test\suite\index.ts", "TypeScript", 0, 0, 11, 0, 0, 0, 0, 27, 3, 41
+"f:\learn_data\vscode\vscode_variable-print\variable-print\tsconfig.json", "JSON with Comments", 0, 12, 0, 0, 0, 0, 0, 4, 1, 17
+"f:\learn_data\vscode\vscode_variable-print\variable-print\vsc-extension-quickstart.md", "Markdown", 0, 0, 0, 31, 0, 0, 0, 0, 17, 48
+"f:\learn_data\vscode\vscode_variable-print\variable-print\webpack.config.js", "JavaScript", 36, 0, 0, 0, 0, 0, 0, 7, 5, 48
+"Total", "-", 59, 34, 168, 99, 4039, 13, 52, 78, 136, 4678

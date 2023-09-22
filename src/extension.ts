@@ -2,60 +2,26 @@
  * @Author: nicheface nicheface@outlook.com
  * @Date: 2023-09-15 14:29:41
  * @LastEditors: nicheface nicheface@outlook.com
- * @LastEditTime: 2023-09-21 04:18:46
+ * @LastEditTime: 2023-09-21 14:46:21
  * @FilePath: \\variable-print\\src\\extension.ts
  */
 
-
 import * as vscode from 'vscode';
 
-// function resetDefaultConfiguration() {
-//     const defaultConfig = {
-//         "rust": "println!(\"row: $row - col: $col $v -> {}\", &$v);",
-//         "go": "fmt.Printf(\"row: $row - col: $col $v -> %#v\",$v)",
-//         // eslint-disable-next-line @typescript-eslint/naming-convention
-//         "h|c|cpp": "printf(\"row: $row - col: $col $v -> %s\\n\", $v);",
-//         // eslint-disable-next-line @typescript-eslint/naming-convention
-//         "javascript|typescript": "console.log($v);",
-//         "python": "print(f\"row: $row - col: $col $v -> {$v}\")",
-//         "java": "System.out.println($v);",
-//         "ruby": "puts \"row: $row - col: $col $v -> #{$v}\"",
-//         "php": "var_dump($v);",
-//         "lua": "print(\"row: $row - col: $col $v ->(\",type($v),\")\",$v)",
-//         "kotlin": "println(\"row: $row - col: $col $v -> \"+$v)",
-//         "csharp": "Console.WriteLine(\"row: $row - col: $col $v -> {0}\", $v);",
-//         "swift": "print(\"row: $row - col: $col $v -> \\($v)\")",
-//         "dart": "print(\"row: $row - col: $col $$v -> $v ${$$v.runtimeType}\");",
-//         "perl": "say \"row: $row - col: $col $v -> $$v\";",
-//         "julia": "println(\"row: $row - col: $col $v ->\", $v)",
-//         "haskell": "putStrLn(\"row: $row - col: $col $v ->\" ++ $v)",
-//         "zig": "std.debug.print(\"row: $row - col: $col $v -> {}\", .{$v});",
-//         "v": "print($v)"
-//     };
 
-//     // 使用 vscode.workspace.getConfiguration 配置管理器写入默认配置
-//     vscode.workspace.getConfiguration().update('variable-print.customPrintStatements', defaultConfig, vscode.ConfigurationTarget.Global);
-//     vscode.window.showInformationMessage('Default configuration has been reset.');
-// }
-
-function getCustomPrintStatement(languageId: string): string {
+function getCustomPrintStatement(languageId: string,id:number): string {
     const config = vscode.workspace.getConfiguration('variable-print');
-    const customPrintStatements = config.get('customPrintStatements') as Record<string, string>;
+    let key='';
+    if (id===0){
+        key='userCustomPrintStatements';
+    }else if(id===1){
+        key='customPrintStatements';
+    }
+    const customPrintStatements = config.get(key) as Record<string, string>;
     for (const key of Object.keys(customPrintStatements)) {
-        const languages = key.split('|'); // 拆分系统定义的语言类型
+        const languages = key.split('|'); // 拆分用户或者默认定义的语言类型
         if (languages.includes(languageId)) {
             return customPrintStatements[key];
-        }
-    }
-    return '';
-}
-function getuserCustomPrintStatement(languageId: string): string {
-    const config = vscode.workspace.getConfiguration('variable-print');
-    const userCustomPrintStatements = config.get('userCustomPrintStatements') as Record<string, string>;
-    for (const key of Object.keys(userCustomPrintStatements)) {
-        const languages = key.split('|'); // 拆分用户定义的语言类型
-        if (languages.includes(languageId)) {
-            return userCustomPrintStatements[key];
         }
     }
     return '';
@@ -98,15 +64,15 @@ function insertCustomPrintStatement(editor: vscode.TextEditor) {
     const { selections } = editor;
     const activeEditor = vscode.window.activeTextEditor;
     if (!activeEditor) {
-        vscode.window.showErrorMessage('No active text editor found.');
+        vscode.window.showErrorMessage('no active editor');
         return;
     }
 
     const { languageId } = editor.document;
-    const userCustomPrintStatement = getuserCustomPrintStatement(languageId);
+    const userCustomPrintStatement = getCustomPrintStatement(languageId,0);
     let printvariableconfig=userCustomPrintStatement;
     if (!userCustomPrintStatement) {
-        const customPrintStatement = getCustomPrintStatement(languageId);
+        const customPrintStatement = getCustomPrintStatement(languageId,1);
         printvariableconfig=customPrintStatement;
         if (!customPrintStatement) {
             vscode.window.showErrorMessage(`No custom print statement found for language ${languageId}`);
@@ -143,7 +109,6 @@ function insertCustomPrintStatement(editor: vscode.TextEditor) {
             continue;
         }
         for (const selectedVariable of selectedVariables) {
-            console.log(selectedVariable);
             if (selectedVariable === '\n') {
                 currentrow += 1;
                 currentcol = currentIndentation.length;
@@ -171,7 +136,6 @@ function insertCustomPrintStatement(editor: vscode.TextEditor) {
         }
         // 将编辑操作添加到 workspaceEdit 中
         const newPosition = new vscode.Position(endLine + 1, 0);
-        //const edit = new vscode.WorkspaceEdit();
         if (endLine === editor.document.lineCount - 1) {
             workspaceEdit.insert(editor.document.uri, new vscode.Position(endLine + 1, 0), '\r');
         }
@@ -182,26 +146,12 @@ function insertCustomPrintStatement(editor: vscode.TextEditor) {
 
 export function activate(context: vscode.ExtensionContext) {
     
-    // const extension = vscode.extensions.getExtension('variable-print');
-    // const currentVersion = extension?.packageJSON.version;
-    // const previousVersion = context.globalState.get('variable-print.extensionVersion');
-    // if ((!previousVersion) || (previousVersion!==currentVersion)) {
-    //     resetDefaultConfiguration();
-    //     // 保存版本号
-    //     context.globalState.update('variable-print.extensionVersion',  currentVersion);
-    // }
-    // // 注册一个命令，供用户手动触发重置默认配置的操作
-    // context.subscriptions.push(vscode.commands.registerCommand('resetDefaultConfig', () => {
-    //     resetDefaultConfiguration();
-    // }));
-    // const nls = require('vscode-nls');
-    // const localize = nls.loadMessageBundle();
-    // const printtitle=localize('print selected variable');
-    // 获取用户配置
+
     const userConfig = vscode.workspace.getConfiguration('variable-print');
     let userCustomPrintStatements = userConfig.get('userCustomPrintStatements') || {};
     if(!userCustomPrintStatements){
         // 更新用户配置
+        // eslint-disable-next-line @typescript-eslint/naming-convention
         userConfig.update('userCustomPrintStatements', {"":""}, vscode.ConfigurationTarget.Global);
         vscode.window.showInformationMessage('user configuration has been reset.');
     }

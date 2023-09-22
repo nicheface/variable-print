@@ -5,7 +5,7 @@
   "description": "print or console.log selected variable js,rust,py,java and so on",
   "version": "2.0.0",
   "repository": "https://github.com/nicheface/variable-print.git",
-  "license": "GPL",
+  "license": "Apache 2.0",
   "icon": "imags/logo.png",
   "engines": {
     "vscode": "^1.82.0"
@@ -30,7 +30,7 @@
         "title": "%extension.printVariable.title%",
         "icon": "imags/logo.png",
         "multiCursorModifier": true,
-        "category": "🎨variable-print: "
+        "category": "🎨 "
       }
     ],
     "keybindings": [
@@ -47,7 +47,6 @@
         {
           "command": "extension.printVariable",
           "group": "navigation",
-          "alt": "print selected variable",
           "when": "editorTextFocus"
         }
       ]
@@ -115,6 +114,5 @@
     "webpack-cli": "^5.1.4"
   },
   "dependencies": {
-    "i18next": "^23.5.1"
   }
 }

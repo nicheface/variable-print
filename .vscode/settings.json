@@ -12,7 +12,24 @@
     "typescript.tsc.autoDetect": "off",
     "workbench.colorCustomizations": {
         "editor.lineHighlightBackground": "#1073cf2d",
-        "editor.lineHighlightBorder": "#9fced11f"
+        "editor.lineHighlightBorder": "#9fced11f",
+        "activityBar.activeBackground": "#3399ff",
+        "activityBar.background": "#3399ff",
+        "activityBar.foreground": "#15202b",
+        "activityBar.inactiveForeground": "#15202b99",
+        "activityBarBadge.background": "#bf0060",
+        "activityBarBadge.foreground": "#e7e7e7",
+        "commandCenter.border": "#e7e7e799",
+        "sash.hoverBorder": "#3399ff",
+        "statusBar.background": "#007fff",
+        "statusBar.foreground": "#e7e7e7",
+        "statusBarItem.hoverBackground": "#3399ff",
+        "statusBarItem.remoteBackground": "#007fff",
+        "statusBarItem.remoteForeground": "#e7e7e7",
+        "titleBar.activeBackground": "#007fff",
+        "titleBar.activeForeground": "#e7e7e7",
+        "titleBar.inactiveBackground": "#007fff99",
+        "titleBar.inactiveForeground": "#e7e7e799"
     },
     "github-actions.workflows.pinned.workflows": [
         ".github/workflows/release.yml"
@@ -22,11 +39,13 @@
     ],
     "i18n-ally.keystyle": "nested",
     "variable-print.userCustomPrintStatements": {
+        
 
         "rust": "println!(\"row: $row - col: $col $v -> {:?}\", &$v);",
         "javascript|typescript": "console.log(\"row: $row - col: $col $v -> \"+ $v);",
     },
     "variable-print.customPrintStatements": {
+
 
         "rust": "println!(\"row: $row - col: $col $v -> {}\", &$v);",
         "go": "fmt.Printf(\"row: $row - col: $col $v -> %#v\",$v)",
@@ -47,5 +66,6 @@
         "zig": "std.debug.print(\"row: $row - col: $col $v -> {}\", .{$v});",
         "v": "print($v)"
     },
-    "files.autoSave": "onFocusChange"
+    "files.autoSave": "onFocusChange",
+    "peacock.color": "#007fff"
 }

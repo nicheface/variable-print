@@ -55,10 +55,6 @@ jobs:
       with:
         files: dist/*
         name: Release ${{ github.ref_name }}  # 使用标签名称作为 Release 标题
-        body: |  # 添加多个提交信息到 Release 正文
-          Commit Messages for this Release:
-
-          $(git log --oneline ${GITHUB_REF#refs/tags/}...HEAD)
       env:
         GITHUB_TOKEN: ${{ secrets.TEST }}
 
