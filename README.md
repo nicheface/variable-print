@@ -2,7 +2,7 @@
  * @Author: nicheface nicheface@outlook.com
  * @Date: 2023-09-15 14:29:41
  * @LastEditors: nicheface nicheface@outlook.com
- * @LastEditTime: 2023-09-22 10:03:19
+ * @LastEditTime: 2023-09-22 10:33:15
  * @FilePath: \\variable-print\\README.md
 -->
 <!--
@@ -12,9 +12,11 @@
  * @LastEditTime: 2023-09-22 09:49:13
  * @FilePath: \\variable-print\\README.md
 -->
-# variable-print README
+# variable-print
 
 简体中文|[english](./README%20EN.md)
+
+[![pPoVJBR.png](https://z1.ax1x.com/2023/09/22/pPoVJBR.png)](https://imgse.com/i/pPoVJBR)
 
 [![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/nicheface.variable-print?label=version)](https://marketplace.visualstudio.com/items?itemName=nicheface.variable-print)
 [![Visual Studio Marketplace Downloads](https://img.shields.io/visual-studio-marketplace/d/nicheface.variable-print?label=downloads)](https://marketplace.visualstudio.com/items?itemName=nicheface.variable-print)
@@ -32,7 +34,7 @@
 >变量打印，自定义任意语言的变量打印，可以在扩展设置里面自定义修改
 支持一行内多变量(逗号或者空格隔开)打印，支持多行多变量打印，**支持按住 <kbd>alt</kbd> 多选多个光标同时打印**
 
-- [variable-print README](#variable-print-readme)
+- [variable-print](#variable-print)
   - [使用说明](#使用说明)
     - [演示效果](#演示效果)
   - [配置](#配置)

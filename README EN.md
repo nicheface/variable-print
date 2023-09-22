@@ -2,7 +2,7 @@
  * @Author: nicheface nicheface@outlook.com
  * @Date: 2023-09-22 08:47:56
  * @LastEditors: nicheface nicheface@outlook.com
- * @LastEditTime: 2023-09-22 10:05:18
+ * @LastEditTime: 2023-09-22 10:34:43
  * @FilePath: \\variable-print\\README EN.md
 -->
 <!--
@@ -13,9 +13,11 @@
  * @FilePath: \\variable-print\\README EN.md
 -->
 
-# variable-print README
+# variable-print
 
 简体中文|[English](./README%20EN.md)
+
+[![pPoVJBR.png](https://z1.ax1x.com/2023/09/22/pPoVJBR.png)](https://imgse.com/i/pPoVJBR)
 
 [![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/nicheface.variable-print?label=version)](https://marketplace.visualstudio.com/items?itemName=nicheface.variable-print)
 [![Visual Studio Marketplace Downloads](https://img.shields.io/visual-studio-marketplace/d/nicheface.variable-print?label=downloads)](https://marketplace.visualstudio.com/items?itemName=nicheface.variable-print)
@@ -33,7 +35,7 @@
 >Variable Print allows custom variable printing in any programming language, with the option to customize it in the extension settings.
 It supports printing multiple variables in a single line (comma or space separated), and also supports printing multiple variables across multiple lines. **You can also print multiple selected variables simultaneously by holding down <kbd>alt</kbd>.**
 
-- [variable-print README](#variable-print-readme)
+- [variable-print](#variable-print)
   - [Usage Instructions](#usage-instructions)
     - [Demo](#demo)
   - [Configuration](#configuration)
