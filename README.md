@@ -20,7 +20,7 @@
 [![Visual Studio Marketplace Downloads](https://img.shields.io/visual-studio-marketplace/d/nicheface.variable-print?label=downloads)](https://marketplace.visualstudio.com/items?itemName=nicheface.variable-print)
 [![stars](https://img.shields.io/github/stars/nicheface/variable-print)](https://github.com/nicheface/variable-print.git)
 [![issues](https://img.shields.io/github/issues/nicheface/variable-print)](https://github.com/nicheface/variable-print.git)
-[![GitHub License](https://img.shields.io/github/license/nicheface/variable-print)](https://github.com/nicheface/variable-print.git)
+<!-- [![GitHub License](https://img.shields.io/github/license/nicheface/variable-print)](https://github.com/nicheface/variable-print.git) -->
 
 📕 [GitHub仓库](https://github.com/nicheface/variable-print.git)
 📗 [VS Code插件市场](https://marketplace.visualstudio.com/items?itemName=nicheface.variable-print)

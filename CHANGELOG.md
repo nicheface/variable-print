@@ -8,20 +8,20 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ### Added
 
-- 支持多光标 (Multi-cursor support)
-- 增加鼠标右键上下文 (Added right-click context menu)
-- 增加了vscode-nls (Added vscode-nls)
+- ✨ 支持多光标 (Multi-cursor support)
+- ✨ 增加鼠标右键上下文 (Added right-click context menu)
+- ✨ 增加了vscode-nls (Added vscode-nls)
 
 ### Changed
 
-- 插入打印语句变成了异步操作 (Inserting print statements became asynchronous)
-- 增加了用户配置选项 (Added user configuration options)
-- 修改了license (Updated license)
+- 🎨 插入打印语句变成了异步操作 (Inserting print statements became asynchronous)
+- 🎨 增加了用户配置选项 (Added user configuration options)
+- 📖 修改了license (Updated license)
 
 ### Fixed
 
-- 正确计算行号和列号 (Correctly calculated line and column numbers)
-- 完善了readme (Improved readme)
+- 🐛正确计算行号和列号 (Correctly calculated line and column numbers)
+- 📖完善了readme (Improved readme)
 
 ## [1.0.3] - 2023-09-16
 
