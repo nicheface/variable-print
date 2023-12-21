@@ -15,8 +15,7 @@
 
 # variable-print
 
-简体中文|[English](./README%20EN.md)
-
+[简体中文](./README.md)|English
 <div align=center>
 	<img src="https://z1.ax1x.com/2023/09/22/pPoVJBR.png"/>
 </div>
